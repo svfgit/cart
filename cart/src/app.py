@@ -70,7 +70,7 @@ min-height: 100%;
         return self.page(body="""
         <p align=center>
             <img src="img/icon.png" />"""+
-            self.button(text="Login", url="register") +
+            self.button(text="Login", url="login") +
             "<br>" + 
             self.button(text="Register", url="register") +
             """            
