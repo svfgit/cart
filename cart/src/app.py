@@ -40,7 +40,7 @@ min-height: 100%;
 </head>
 <body style='margin: 0; padding: 0;width:100%;height:100%; font-family:"serif";'  >
 """+body+"""
-
+<Br><Br><Br><Br><Br><Br><Br>
 </body></html>
     """
     
@@ -175,6 +175,7 @@ min-height: 100%;
             <tr><td align=center>"""+self.input(placeholder="State")+"""</td></tr>
             """) +"""
             <br>
+            <img src="img/pmtds.png" width=100%/><br>
              <br><br>
         """+ self.button(text="Pay For Ride", url="confirm") +"""
             </p>
