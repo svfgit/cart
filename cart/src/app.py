@@ -19,26 +19,10 @@ class Root(object):
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title></title>
-    <STYLE>
-<!--
-a {text-decoration:none;color:white;}
-html {
-  height: 100%;
-}
-
-body {
-min-height: 100%;
-    
-
-   font-family:Arial, Helvetica, sans-serif;
-   font-size:1.5em;
-   """+back+"""
-
-}
-//-->
-</STYLE>
+    <link rel="stylesheet" media="all" href="css/normalize.css">
+    <link rel="stylesheet" media="all" href="css/main.css">
 </head>
-<body style='margin: 0; padding: 0;width:100%;height:100%; font-family:"serif";'  >
+<body>
 """+body+"""
 <Br><Br><Br><Br><Br><Br><Br>
 </body></html>
