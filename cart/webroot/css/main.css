@@ -1,7 +1,14 @@
 body {
-  font-family: 'Roboto' ,'Open Sans', sans-serif;
   color: #6a6a6a;
+  font-family: 'Roboto' ,'Open Sans', sans-serif;
+  overflow: hidden;
 }
+
+// Disable form field highlighting
+input,
+input:focus,
+textarea,
+textarea:focus { outline: none !important; }
 
 header {
   box-shadow: 0px 3px 15px #9c9c9c;
@@ -45,20 +52,21 @@ form {
   padding: 5%;
 }
 form input {
-  width: 100%;
-  margin-top: 5%;
   border: 0;
   border-bottom: 2px solid #979797;
+  margin-top: 5%;
+  width: 100%;
 }
 form button {
   margin-top: 5%;
 }
-a { 
-	text-decoration: none !important;
-}
+a { text-decoration: none !important; }
 a > div { 
-	color: white;
+	background: white;
+	border-radius: 25px;
 	font-size: 16px;
+	max-height: 3em;
+	line-height: 3em;
 	text-transform: uppercase;
 }
 form a {
@@ -159,4 +167,57 @@ form a {
 }
 .cc-container img {
   max-height: 30px;
+}
+
+.action-bar {
+ background-color: white;
+ color: green;
+ display: table;
+ font-size: 2.25em;
+ height: 3em;
+ text-align: center;
+ opacity: 0.8;
+ width: 100%;
+}
+
+.action-bar span {
+ display: table-cell;
+ vertical-align: middle;
+}
+
+.action-bar-img {
+ height: 2.5em;
+ margin: .25em 0;
+ width: auto;
+}
+
+.center-text { text-align: center; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+table { 
+ background: transparent;
+ border-radius: 25px;
+ margin: auto;
+ opacity: 0.8;
+ padding: .5em 0;
+}
+
+tr > td {
+ width: 80%;
+}
+
+td > input {
+ margin: .5em .25em;
+}
+
+input {
+ background-color: rgba(0, 0, 0, 0.5);
+ border: 1px solid #bbb;
+ color: #FFFFFF;
+ font-size: 17px;
+ line-height: 40px;
+ outline: none !important;
+ padding: .25em .75em;
+ width: 90%;
 }
