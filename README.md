@@ -8,13 +8,23 @@
 
 ***
 
-Install gcloud-sdk
+### Google Cloud
+
+#### Setup Google Cloud SDK
 
 `needs instructions`
 
 ***
 
-### Clone vanilla Ubuntu container `is this necessary?`
+#### Pull Docker image from gCloud docker registry
+
+`needs instructions`
+
+***
+
+### Docker file setup
+
+#### Clone vanilla Ubuntu container `is this necessary?`
 
 `docker run -i -t ubuntu /bin/bash`
 
@@ -55,3 +65,14 @@ Install gcloud-sdk
 - oAuth 2.0
 - Stripe
 - Bar Code(s)
+
+## User Personas
+
+### Customer(s)
+###### @TODO ~ Combine customer family & extended family
+https://app.xtensio.com/folio/hf5nxhvt
+https://app.xtensio.com/folio/e5n9sbct
+
+### Merchant(s)
+https://app.xtensio.com/folio/2hx6gsif
+
