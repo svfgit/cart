@@ -1,0 +1,99 @@
+div.calendar1 {
+	thead {
+		tr.fc-first {
+			color: white;
+			background: darken(@brand-success, 3%);
+			.fc-day-header {
+				padding-bottom: 5px;
+				padding-top: 5px;
+			}
+		}
+	}
+	tbody {
+		background: white;
+	}
+	.fc-widget-header {
+		border: none;
+	}
+	tr.fc-week {
+		td.fc-day {
+			min-height: 0 !important;
+			padding-bottom: 15px;
+			padding-top: 5px;
+			div {
+				min-height: 0 !important;
+			}
+		}
+	}
+	.fc-header {
+		position: relative !important;
+			&:focus, &:active {
+				border: none !important; 
+				outline: none !important;
+			}
+		.fc-button-today {
+			display: none;
+		}	
+		tbody {
+			background: @brand-success;
+			&:focus, &:active {
+				border: none !important; 
+				outline: none !important;
+			}
+		}
+		.fc-header-left, .fc-header-right {
+			&:focus, &:active {
+				border: none !important; 
+				outline: none !important;
+			}
+		}
+		.fc-header-right {
+			position: absolute;
+			right: 10px;
+			width: 100%;
+			top: 13px;
+			.fc-button {
+				margin-bottom: 0;
+				border-radius: 0;
+				box-shadow: none;
+				background: transparent;
+				border: none;
+				color: white;
+				.fc-text-arrow {
+					font-size: 3em;
+				}
+			}
+			.fc-button-prev {
+				position: absolute;
+				left: 30px;
+			}
+			.fc-button-next {
+				right: 10px;
+			}
+		}
+	}
+	tr {
+		td.fc-header-left {
+			width: 100% !important;
+			text-align: center !important;
+			.fc-header-title {
+				h2 {
+					color: white;
+					margin-bottom: 11px;
+					margin-top: 11px;
+					font-size: 27px;
+				}
+			}
+		}
+	}
+	.fc-day-number {
+		float: none;
+		text-align: center;
+	}
+	.fc-today {
+		color: white;
+		background: lighten(@brand-success, 15%);
+	}
+}
+
+

@@ -1,0 +1,70 @@
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+/*.well[ui-view]{
+ height: 65px; 
+}*/
+
+[ui-view] {
+  position: static;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.ui-view-container {
+  // position: relative;
+}
+
+// [ui-view].ng-enter, [ui-view].ng-leave {
+//  -webkit-animation: moveToLeft .6s ease both;
+//     animation: moveToLeft .6s ease both; .5s ease-in-out;
+// }
+
+// [ui-view].ng-enter {
+//  -webkit-animation: moveFromRight .6s ease both;
+//  animation: moveFromRight .6s ease both;
+// }
+
+// [ui-view].ng-enter-active {
+//   -webkit-animation: moveFromRight .6s ease both;
+//  animation: moveFromRight .6s ease both;
+// }
+
+// [ui-view].ng-leave {
+//   -webkit-animation: moveToLeft .6s ease both;
+//     animation: moveToLeft .6s ease both;
+// }
+
+// [ui-view].ng-leave-active {
+//  -webkit-animation: moveToLeft .6s ease both;
+//     animation: moveToLeft .6s ease both;
+// }
+
+
+
+// .PushTop.ng-leave    {
+//   -webkit-transform-origin: 100% 50%;
+//   transform-origin: 100% 50%;
+//   -webkit-animation: rotatePushTop .7s both ease;
+//   animation: rotatePushTop .7s both ease;
+// }
+// .PushTop.ng-enter    {  
+//     -webkit-animation: moveFromBottom .9s ease both;
+//     animation: moveFromBottom .9s ease both;
+// }
+
+@-webkit-keyframes moveToLeft {
+  from { }
+  to { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+  from { }
+  to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+@-webkit-keyframes moveFromRight {
+  from { -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+  from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}

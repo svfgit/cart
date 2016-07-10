@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+
+	<meta charset="utf-8"/>
+
+	<title>Material UI Angular Theme
+	</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+
+	<link rel="stylesheet" href="assets/css/vendor.css"/>
+	<link rel="stylesheet" href="assets/css/app-green.css" />
+	<link rel="stylesheet" href="assets/css/docs.css" />
+	<link rel="stylesheet" href="assets/css/angular-material.css"/>
+
+	
+</head>
+<body ng-app="docs" class="page-header-fixed page-quick-sidebar-over-content">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<a class="navbar-brand" href="http://material.strapui.com"><img src="assets/img/logo.png" alt=""></a>
+		
+	</div>
+	<div class="container" ng-controller="Ctrl">
+		<div class="row">
+			<div class="col-sm-4">
+				<ul class="nav nav-pills nav-stacked affix select-options">
+				  <li role="presentation"><a href="#installation">Installation</a></li>
+				  <li role="presentation"><a href="#features">Features</a></li>
+				  <li role="presentation"><a href="#widgets">Widgets</a></li>
+				  <li role="presentation"><a href="#add-widgets">Plugins</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-8 col-sm-offset-5 docs-content">
+				<div id="installation">
+				<h3>Installation</h3>
+					<div class="subject-content">
+						To use the Utoo Material UI Angular Theme, you need to make sure you have <code>bower</code>, <code>npm</code> and <code>gulp</code> globally installed. Now navigate to your app directory (<code>$ cd myAngularApp/</code>) and run the following terminal commands :
+						<ul>
+							<li>
+								<code>$ bower install</code>
+							</li>
+							<li>
+								<code>$ npm install</code>
+							</li>
+							<li>
+								<code>$ gulp serve</code>
+							</li>
+						</ul>
+						You have now succesfully set up Utoo Material UI Angular Theme!
+					</div>
+				</div>
+				<div id="basics">
+					<h3>Features</h3>
+					<div class="subject-content">
+						<div class="subject-content">
+							Utoo Material UI is a lightweight and feature rich admin template which is clean and easy to use. 
+							Current release comes with the following features:
+							<ul class="features-list">
+								<li>
+									Responsive design based on Angular Material UI.
+								</li>
+								<li>
+									Custom elements and plugins including:
+									<ul class="features-list-extended">
+										<li>
+											Pure CSS3 checkbox, radio and On/Off switch elements
+										</li>
+										<li>
+											 Wysiwig editor
+										</li>
+										<li>
+											User Profile
+										</li>
+										<li>
+											Email-template
+										</li>
+										<li>
+											Customizable widgets in different colors and styles
+										</li>
+									</ul>
+								</li>
+								<li>
+									Angular Material UI and third party plugins and elements including:
+									<ul class="features-list-extended">
+										<li>
+											Dynamic Charts
+										</li>
+										<li>
+											Tables
+										</li>
+										<li>
+											Form validation
+										</li>
+										<li>
+											Date Picker
+										</li>
+										<li>
+											DateRange Picker
+										</li>
+										<li>
+											Time Picker
+										</li>
+										<li>
+											Carousel for Gallery
+										</li>
+										<li>
+											Full Calendar
+										</li>
+										<li>
+											Progress Bars
+										</li>
+										<li>
+											Labels and Badges
+										</li>
+										<li>
+											Collapse
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="widgets">
+					<h3>Widgets</h3>
+					<div class="subject-content">
+						The following widgets have been used in Material UI Angular Theme :
+						<div class="widget-docs">
+							<div class="well">
+								<h4>Panels</h4>
+								<div class="widgets-docs-elements">
+									<div class="panel-margin">
+										<md-toolbar class="md-primary">
+											<div class="md-toolbar-tools">
+												<h2 class="md-flex">Primary Panel</h2>
+											</div>
+										</md-toolbar>
+										<md-content class="md-padding">
+											<p>Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro</p>					
+										</md-content>
+									</div>
+								</div>
+								<div class="widget-docs-code">
+									<pre>&lt;md-toolbar class="md-primary"&gt;
+&lt;div class="md-toolbar-tools"&gt;
+&lt;h2 class="md-flex"&gt;Primary Panel&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/md-toolbar&gt;
+&lt;md-content class="md-padding"&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro&lt;/p&gt;					
+&lt;/md-content&gt;</pre>
+								</div>
+							</div>
+							<div class="well">
+								<h4>Buttons</h4>
+								<div class="widget-docs-elements">
+									<md-button class="md-raised md-warn">Primary</md-button>
+								</div>
+								<div class="widget-docs-code">
+								<pre>&lt;md-button class="md-raised md-warn"&gt;Primary&lt;/md-button&gt;</pre>
+								</div>
+							</div>
+							<div class="well">
+								<h4>Dropdowns</h4>
+								<div class="widget-docs-elements">
+				                    <md-select placeholder="Pick" ng-model="someVal">
+				                        <md-option value="1">One</md-option>
+				                        <md-option value="2">Two</md-option>
+				                        <md-option value="3">Three</md-option>
+				                        <md-option value="4">Four</md-option>
+				                    </md-select>					                
+								</div>
+								<div class="widget-docs-code">
+<pre>&lt;md-select placeholder="Pick" ng-model="someVal"&gt;
+    &lt;md-option value="1"&gt;One&lt;/md-option&gt;
+    &lt;md-option value="2"&gt;Two&lt;/md-option&gt;
+    &lt;md-option value="3"&gt;Three&lt;/md-option&gt;
+    &lt;md-option value="4"&gt;Four&lt;/md-option&gt;
+&lt;/md-select&gt;</pre>
+				                </div>
+				            </div>
+							<div class="well">
+								<h4>Sliders</h4>
+								<div class="widget-docs-elements">
+									<md-slider flex min="0" max="255" ng-model="color.red" aria-label="red" id="red-slider"></md-slider>
+								</div>
+								<div class="widget-docs-code">
+									<pre>&lt;md-slider flex min="0" max="255" ng-model="color.red" aria-label="red" id="red-slider"&gt;&lt;/md-slider&gt;</pre>
+								</div>
+							</div>
+							<div class="well">
+								<h4>Progress Bars</h4>
+								<div class="widgets-docs-elements" style="margin-bottom:20px;">
+									<md-progress-linear md-mode="indeterminate"></md-progress-linear>
+								</div>
+								<div class="widget-docs-code">
+									<pre>&lt;md-progress-linear md-mode="indeterminate"&gt;&lt;/md-progress-linear&gt;</pre>
+								</div>
+							</div>
+							<div class="well">
+								<h4>Circular Progress</h4>
+								<div class="widgets-docs-elements" style="margin-bottom:20px;">
+									<md-progress-circular class="md-accent" md-mode="indeterminate"></md-progress-circular>
+								</div>
+								<div class="widget-docs-code">
+									<pre>&lt;md-progress-circular class="md-accent" md-mode="indeterminate"&gt;&lt;/md-progress-circular&gt;</pre>
+								</div>
+							</div>
+							<div class="well">
+								<h4>Toast</h4>
+								<div class="widgets-docs-elements">
+								<md-button class="md-raised md-accent" ng-click="showActionToast()">Show With Action
+					</md-button>
+								</div>
+								<div class="widget-docs-code">
+									HTML<pre>
+&lt;md-button class="md-raised md-accent" ng-click="showActionToast()"&gt;
+Show With Action
+&lt;/md-button&gt;
+</pre>
+JavaScript
+<pre>
+ $scope.toastPosition = {
+    bottom: false,
+    top: true,
+    left: false,
+    right: true
+  }
+  $scope.getToastPosition = function() {
+    return Object.keys($scope.toastPosition)
+      .filter(function(pos) { return $scope.toastPosition[pos]; })
+      .join(' ');
+  }
+   $scope.showActionToast = function() {
+    var toast = $mdToast.simple()
+          .content('Action Toast!')
+          .action('OK')
+          .highlightAction(false)
+          .hideDelay(9000)
+          .position($scope.getToastPosition());
+    $mdToast.show(toast).then(function() {
+      alert('You clicked \'OK\'.');
+    });
+  };
+</pre>
+								</div>
+							</div>
+							<div class="well">
+								<h4>Dialogs</h4>
+								<div class="widgets-docs-elements">
+									 <div>
+					                    <md-button class="md-primary" ng-click="showAlert($event)">
+					                    Alert Dialog
+					                    </md-button>
+					                </div>
+								</div>
+								<div class="widget-docs-code">
+									HTML<pre>&lt;md-button class="md-primary" ng-click="showAlert($event)"&gt;
+Alert Dialog
+&lt;/md-button&gt;</pre>
+JavaScript<pre>
+$scope.alert = '';
+  $scope.showAlert = function(ev) {
+    $mdDialog.show(
+      $mdDialog.alert()
+        .parent(angular.element(document.body))
+        .title('This is an alert title')
+        .content('You can specify some description text in here. This is your alert body.')
+        .ariaLabel('Alert Dialog Demo')
+        .ok('Got it!')
+        .targetEvent(ev)
+    );
+  };
+</pre>
+								</div>	
+							</div>
+							<div class="well">
+								<h4>Tabs</h4>
+								<div class="widgets-docs-elements">
+									<md-content class="md-padding">
+					                    <md-tabs md-dynamic-height md-border-bottom>
+					                      <md-tab label="one">
+					                        <md-content class="md-padding">
+					                          <h1 class="md-display-2">Tab One</h1>
+					                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+					                        </md-content>
+					                      </md-tab>
+					                      <md-tab label="two">
+					                        <md-content class="md-padding">
+					                          <h1 class="md-display-2">Tab Two</h1>
+					                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.</p>			                         
+					                        </md-content>
+					                      </md-tab>
+					                      <md-tab label="three">
+					                        <md-content class="md-padding">
+					                          <h1 class="md-display-2">Tab Three</h1>
+					                          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi.</p>
+					                        </md-content>
+					                      </md-tab>
+					                    </md-tabs>
+					                </md-content>
+								</div>
+								<div class="widget-docs-code">
+									<pre>&lt;md-content class="md-padding"&gt;
+&lt;md-tabs md-dynamic-height md-border-bottom&gt;
+    &lt;md-tab label="one"&gt;
+       &lt;md-content class="md-padding"&gt;
+          &lt;h1 class="md-display-2"&gt;Tab One&lt;/h1&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate.&lt;/p&gt;
+        &lt;/md-content&gt;
+    &lt;/md-tab&gt;
+    &lt;md-tab label="two"&gt;
+        &lt;md-content class="md-padding"&gt;
+          &lt;h1 class="md-display-2"&gt;Tab Two&lt;/h1&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultricesPraesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.&lt;/p&gt;
+        &lt;/md-content&gt;
+    &lt;/md-tab&gt;
+    &lt;md-tab label="three"&gt;
+        &lt;md-content class="md-padding"&gt;
+          &lt;h1 class="md-display-2"&gt;Tab Three&lt;/h1&gt;
+          &lt;p&gt;Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum.&lt;/p&gt;
+        &lt;/md-content&gt;
+      &lt;/md-tab&gt;
+  &lt;/md-tabs&gt;
+&lt;/md-content&gt;</pre>
+			</div>
+							</div>
+							<div class="well">
+							<h4>Switches and Checkboxes</h4>
+								<div class="widgets-docs-elements" style="margin-bottom: 20px;" >
+									<md-switch aria-label="Switch 1">
+									    Switch
+									</md-switch>
+									<md-checkbox aria-label="Checkbox 1">
+								      	Checkbox
+								    </md-checkbox>	
+								</div>
+								<div class="widget-docs-code">
+									HTML<pre>&lt;md-switch aria-label="Switch 1"&gt;
+    Switch
+&lt;/md-switch&gt;
+&lt;md-checkbox aria-label="Checkbox 1"&gt;
+  	Checkbox
+&lt;/md-checkbox&gt;	</pre>
+								</div>
+							</div>
+							<div class="well">
+								<div class="widgets-docs-elements">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Email</th>
+												<th>Address</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>John</td>
+												<td>john@gmail.com</td>
+												<td>London, UK</td>
+											</tr>
+											<tr>
+												<td>Andy</td>
+												<td>andygmail.com</td>
+												<td>Merseyside, UK</td>
+											</tr>
+											<tr>
+												<td>Frank</td>
+												<td>frank@gmail.com</td>
+												<td>Southampton, UK</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="widget-docs-code">
+									<pre>&lt;table class="table table-bordered"&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Email&lt;/th&gt;
+			&lt;th&gt;Address&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;John&lt;/td&gt;
+			&lt;td&gt;john@gmail.com&lt;/td&gt;
+			&lt;td&gt;London, UK&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Andy&lt;/td&gt;
+			&lt;td&gt;andygmail.com&lt;/td&gt;
+			&lt;td&gt;Merseyside, UK&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Frank&lt;/td&gt;
+			&lt;td&gt;frank@gmail.com&lt;/td&gt;
+			&lt;td&gt;Southampton, UK&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</pre>
+								</div>
+								<code>The table classes can be changed using table-bordered/table-hover/table-condensed classes. </code>
+							</div>
+							<div class="well">
+								<h4>Form Elements</h4>
+								<div class="widgets-docs-elements">
+									<md-input-container flex>
+										<label>Name</label>
+										<input ng-model="user.firstName">
+									</md-input-container>
+									<md-input-container flex>
+										<label>Email</label>
+										<input ng-model="theMax" type="email">
+									</md-input-container>
+								</div>
+								<div class="widget-docs-code">
+<pre>&lt;md-input-container flex&gt;
+	&lt;label&gt;Name&lt;/label&gt;
+	&lt;input ng-model="user.firstName"&gt;
+&lt;/md-input-container&gt;
+&lt;md-input-container flex&gt;
+	&lt;label&gt;Email&lt;/label&gt;
+	&lt;input ng-model="theMax" type="email"&gt;
+&lt;/md-input-container&gt;</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="add-widgets">
+					<h3>Plugins</h3>
+					<div class="subject-content">
+						<div class="well">
+							<h4>Chart.js Charts</h4>
+							<div class="widgets-docs-elements">
+								<div><canvas class ="round" id="cpie"></canvas></div>
+							</div>
+							<div class="widget-docs-code">
+								HTML<pre>&lt;div ng-controller="chartCtrl.js"&gt;
+	&lt;canvas id="pie" class="chart chart-pie chart-xs" data="pie.data" labels="pie.labels" colours="pie.colours"&gt;
+	&lt;/canvas&gt;
+&lt;/div&gt;</pre>
+JavaScript<pre>
+$scope.pie = {
+	labels : ["Success", "Danger", "Info"],
+	data : [220, 70, 100],
+	colours: ['#a2d19e','#80b1cb','#e8b769','#d57d6d','#06c5ac']
+	};
+}]);	
+</pre>
+							</div>
+						</div>
+						<div class="well">
+							<h4>C3 Charts</h4>
+							<div class="widgets-docs-elements">
+								<div id="piechart"></div>
+							</div>
+							<div class="widget-docs-code">
+			<pre>&lt;c3chart bindto-id="pie-chart"&gt;
+    &lt;chart-column column-id="data-1" column-values="10" column-type="pie"/&gt;    
+    &lt;chart-column column-id="data-2" column-values="30" column-type="pie"/&gt;      
+    &lt;chart-column column-id="data-3" column-values="5" column-type="pie"/&gt;  
+    &lt;chart-column column-id="data-4" column-values="19" column-type="pie"/&gt;  
+    &lt;chart-column column-id="data-5" column-values="2" column-type="pie"/&gt;  
+    &lt;chart-legend show-legend="false"/&gt;  
+    &lt;chart-colors color-pattern="#06c5ac,#e8b769,#d57d6d,#a2d19e,#80b1cb"/&gt;  
+    &lt;chart-size chart-height="300" chart-width="400"/&gt;    
+&lt;/c3chart&gt;</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+
+	<script src="assets/js/perfect-scrollbar.jquery.js"></script>
+	<script src="assets/js/angular.min.js") type="text/javascript"></script>	
+	<script src="assets/js/angular-animate.js" type="text/javascript"></script>	
+	<script src="assets/js/angular-aria.min.js" type="text/javascript"></script>	
+	<script src="assets/js/angular-material.min.js" type="text/javascript"></script>	
+	<script src="assets/js/app.js" type="text/javascript"></script>
+	<script src="assets/js/vendor.js" type="text/javascript"></script>	
+	<script src="assets/js/docs.js" type="text/javascript"></script>	
+
+</body>
+</html>

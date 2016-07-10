@@ -1,0 +1,229 @@
+
+.profile-back {
+	background-image: url('/images/mountain.jpg');
+	position: relative;
+	min-height: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	&:before {
+		background: darken(#009688, 5%);
+		height: 150px;
+		width: 100%;
+		left: 0;
+		right: 0;
+		content: "";
+		position: absolute;
+		box-shadow:  0 2px 4px 1px rgba(0, 0, 0, 0.14);
+	}
+	&:after {
+		position: absolute;
+		left: 0;
+		content: "";
+		right: 0;
+		top: 0;
+		z-index: 0;
+		bottom: 0;
+		background: rgba(0, 150, 136, 0.7);
+	}		
+}
+
+	.sanket-inside {
+		position: absolute;
+		  left: 40px;
+		  top: 60px;
+		  width: 120px;
+	}
+	.sanket-profile {
+		  position: absolute;
+		  left: 175px;
+		  top: 85px;
+		  color: white;
+		  font-size: 18px;
+		  .pl {
+		  	font-size: 14px;
+		  }
+	}
+	.tabs {
+		width: 40%;
+		  position: absolute;
+		  right: 100px;
+		  top: 103px;
+		  md-pagination-wrapper {
+		  	background: darken(#009688, 8%);
+		  }
+		  .md-tab {
+		  	color: rgba(255, 255, 255, 0.9);
+
+		  }
+	  	.md-active {
+	  		background: rgba(255, 255, 255, 0.9);
+	  		color: darken(#009688, 8%);
+	  	}
+	  	.md-ripple-container {
+	  		color: lighten(#009688, 8%) !important;
+	  	}
+	  	.md-button {
+			min-width: 0;
+			md-icon {
+				color: rgba(255, 255, 255, 0.9);
+				height: 30px;
+				width: 30px;
+			}
+		}
+		.profile-content {
+			color: #3D3D3D;
+			.summary {
+				h3 {
+					margin-top: 0;
+				}
+			}
+			.information {
+				table.info-table {
+					width: 100%;
+					td {
+						font-size: 14px;
+						padding: 5px;
+						&.bold {
+							font-weight: 600;
+							width: 30%;
+						}
+					}
+				}
+			}
+		}
+		.img-friends {
+			.img-circle {
+				width: 150px;
+				margin: 15px;
+			}
+		}
+	}
+	.ref {
+		min-width: 0;
+		margin-top: 40px;
+		margin-right: 20px;
+		md-icon {
+			color: rgba(255, 255, 255, 0.9);
+			height: 30px;
+			width: 30px;
+		}
+	}
+	.profile-card {
+		position: relative;
+		width: 90%;
+		.profile-body {
+			.friend-list {
+				margin-left: 11%;
+				margin-top: 210px;
+				width: 30%;
+				.img-circle {
+					width: 100px;
+					margin: 12px;
+					border: 3px solid rgba(255, 255, 255, 0.9);
+				}
+			}
+			.info-card {
+				width: 30%;
+				margin-left: 11%;
+				margin-top: 25px;
+				padding-bottom: 39px;
+				.info-line {
+					// height: 65px;
+					border-bottom: 2px solid darken(#009688, 2%);
+					padding: 20px;
+					font-size: 15px;
+					background: rgba(255, 255, 255, 0.9);
+				}
+			}
+		}
+	}
+	.card {
+		color: #3D3D3D;
+		overflow: hidden;
+		margin-top: 15px;
+		.card-header {
+			height: 65px;
+			background: #EDEDED;
+			display: table;
+			width: 100%;
+			.card-left {
+				display: table-cell;
+				vertical-align: middle;
+				width: 55px;
+				.sanket-header {
+					width: 47px;
+				}			
+			}
+			.card-right  {
+				display: table-cell;
+				vertical-align: middle;
+				.sanket-name {
+					font-weight: 600;
+					font-size: 14px;
+				}
+				.sanket-time {
+					font-size: 12px;
+					.mdi {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+		.card-content {
+			background: white;
+			overflow: hidden;
+			font-size: 17px;
+			.sanket-status {
+				padding: 5px;
+			}
+		}
+	}
+
+@media only screen and (max-width: 990px) {
+	.profile-body {
+		display: none;
+	}
+
+	.sanket-inside {
+		top: 15px !important;
+  		width: 100px !important;
+	}
+	.sanket-profile {
+		left: 155px !important;
+  		top: 40px !important;
+	}
+	.tabs {
+		position: static !important;
+		width: 90% !important;
+		margin: 125px auto 15px auto !important;
+	}
+	.profile-back {
+		background: #009688;
+	}	
+	.profile-top {
+		background: #009688;
+			&:before {
+			background: darken(#009688, 5%);
+			height: 150px;
+			width: 100%;
+			top: -150px;
+			left: 0;
+			right: 0;
+			content: "";
+			position: absolute;
+			box-shadow:  0 2px 4px 1px rgba(0, 0, 0, 0.14);
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.friend-list {
+		margin-left: 0 !important;
+		width: 50% !important;
+	}
+}
+
+.img-res1 {
+	width: 661px;
+}

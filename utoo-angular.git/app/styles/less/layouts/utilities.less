@@ -1,0 +1,151 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+@media (max-width: 767px) {
+	.hidden-xs {
+		display: none;
+	}
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+   blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+}
+
+
+
+.bg-primary {
+	background: #33C9DC;
+}
+.bg-warning {
+	background: #FDD835;
+}
+.bg-info {
+	background: #E91E63;
+}
+.bg-danger {
+	background: #F44336;
+}
+.bg-success {
+	background: #64DD17;
+}
+
+a {
+	text-decoration: none;
+	color: #33C9DC;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.primary1 {
+	color: #33C9DC;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.btn-toolbar {
+  margin-left: -5px; // Offset the first child's margin
+  &:extend(.clearfix all);
+
+  .btn-group,
+  .input-group {
+    float: left;
+  }
+  > .btn,
+  > .btn-group,
+  > .input-group {
+    margin-left: 5px;
+  }
+}
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; // match .btn alignment given font-size hack above
+  > .btn {
+    position: relative;
+    float: left;
+    // Bring the "active" button to the front
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 2;
+    }
+  }
+}
+.btn {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: none;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+
+

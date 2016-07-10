@@ -1,0 +1,345 @@
+div.back {
+ 	width: 100%;
+ 	background: url(../images/login-bg.jpg);
+ 	background-size: cover;
+	height: 100%;
+	position: fixed;
+	top: 0;	
+	bottom: 0;
+}
+
+
+.top-logo {
+	text-align: center;
+	padding-top: 10px;
+	.navbar-brand-login {
+		img {
+			width: 130px;
+		}
+	}
+}
+
+#new-overlay {
+	position: absolute;
+	top: 0;	
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: lighten(#3498db, 40%);
+	-webkit-transition: all .4s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+	transition: all .4s cubic-bezier(0.175, 0.885, 0.335, 1.05);	
+		&:after {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 280px;
+			left: 0;
+			right: 0;
+			background: #3498db;
+			content: "";
+			box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.14);
+		}	
+}
+.link {
+	.md-button {
+		text-transform: none;
+		font-size: 16px;
+		padding: 4px;
+	}
+}
+
+.login-img {
+	width: 220px;
+}
+
+#n-overlay {
+	position: absolute;
+	top: 0;	
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #3498db;
+}
+
+.login-wrap {
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	top: 170px;
+	padding: 20px;
+	z-index: 1;
+	background: lighten(#3498db, 50%);
+	height: 380px;
+}
+	.img-box {
+		display: inline-block;
+		padding: 10px;
+		position: absolute;
+		display: inline-block;
+		margin: 0 auto;
+		z-index: 2;
+		left: 44%;
+		top: 80px;
+	}
+
+.float-container {
+	.mfb-component--tr {
+	  right: 3%;
+	  top: 223px;
+	  a:focus, a:active, a:hover {
+	  	outline: none !important;
+	  	color: white;
+	  }
+	  .mdi {
+	  	font-size: 20px;
+	  }
+	}
+	.main {
+		.mfb-component__button--main{
+			background-color: #8BC34A;
+		}
+	}
+	.fb {
+		.mfb-component__button--child{
+			background-color: #3F51B5;
+		}	
+	}
+	.tw {
+		.mfb-component__button--child{
+			background-color: @brand-primary;
+		}	
+	}
+	.gp {
+		.mfb-component__button--child{
+			background-color: @brand-danger;
+		}	
+	}
+}
+
+
+#login-container {
+	z-index: 9999;
+	position: absolute;
+	display: none;
+	opacity: 0;
+	-webkit-transition: all .3s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+	transition: all .3s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+		&.view-login {
+			top: 100px;
+			display: block;
+			opacity: 1;
+			width: 100%;
+		}
+}	
+.link {
+	.md-button {
+		margin-bottom: -14px;
+	}
+}
+div#login-container {
+	md-content.md-default-theme {
+		background-color: transparent !important;
+	}
+	label {
+		color: #E7E7E7;
+	}
+	input {
+		border-color: #E7E7E7;
+		color: #E7E7E7;
+	}
+	md-checkbox {
+		color: #E7E7E7;
+		.md-icon {
+			border-color: #E7E7E7;
+		}
+	}
+	.link {
+		float: left;
+	}
+}
+
+#signup-container {
+	z-index: 9999;
+	position: absolute;
+	display: none;
+	opacity: 0;
+	-webkit-transition: all .3s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+	transition: all .3s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+		&.view-signup {
+			top: 100px;
+			display: block;
+			opacity: 1;
+			width: 100%;
+		}
+}	
+
+div#signup-container {
+	md-content.md-default-theme {
+		background-color: transparent !important;
+	}
+	label {
+		color: #E7E7E7;
+	}
+	input {
+		border-color: #E7E7E7;
+		color: #E7E7E7;
+	}
+	md-checkbox {
+		color: #E7E7E7;
+		.md-icon {
+			border-color: #E7E7E7;
+		}
+	}
+	.link {
+		float: left;
+
+	}
+}
+
+.login-body {
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+	height: 350px;
+	background: #2ecc71;
+	width: 30%;
+	margin: 0 auto;
+	opacity: 1;
+	-webkit-transition: all .2s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+	transition: all .2s cubic-bezier(0.175, 0.885, 0.335, 1.05);
+	&.hide-login {
+		opacity: 0;
+	}
+}
+.smiley {
+	display: block;
+	margin: 0 auto;
+}
+.utoo {
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+}
+.ll {
+	margin-top: 40px;
+	font-size: 19px;
+	color: white !important;
+	
+}
+
+.heading {
+	margin-top: 70px;
+}
+.oops {
+	color: white;
+	font-weight: 600;
+	font-size: 39px;
+}
+.not-found {
+	color: white;
+	font-size: 23px;
+}
+.go-back {
+	a.md-button {
+		color: white !important;
+		text-transform: none !important;
+		font-size: 18px !important;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.login-body {
+		width: 60%;
+	}
+	#new-overlay.overlay-effect {
+		top: 60px;
+		left: 60px;
+		right: 0;
+	}
+	#login-container, #signup-container {
+		width: 90% !important;
+		top: 30px !important;
+	}
+}
+
+
+@media (min-width: 1550px) {
+	
+	.login-wrap {
+		left: 20%;
+		right: 20%;
+		height: 420px;
+	}
+
+	.float-container {
+		.mfb-component--tr {
+			right: 7% !important;
+		}
+	}
+	.social {
+		right: 7.5% !important;
+		}
+
+}
+@media (max-width: 990px) {
+	.float-container {
+		.mfb-component--tr {
+			right: 1% !important;
+		}
+	}
+	.social {
+		right: 2% !important;
+		}
+	.img-box {
+		left: 42%;
+	}
+	.login-img {
+		width: 160px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.float-container {
+		.mfb-component--tr {
+			display: none;
+		}
+	}
+	.social {
+		display: none;
+		}	
+	.img-box {
+		left: 39%;
+		top: 40px;
+	}
+	.login-wrap {
+		left: 10%;
+		right: 10%;
+		top: 110px;
+	}
+	.login-img {
+		width: 160px;
+	}
+}
+
+@media (max-width:600px) {
+	.img-box {
+		left: 30%;
+	}
+	.social {
+		display: none;
+		}
+	.login-img {
+		width: 160px;
+	}
+}
+.social {
+	position: absolute;
+	right: 4%;
+	z-index: 9;
+	top: 220px;
+	font-size: 16px;
+	color: white;
+}
