@@ -2,6 +2,10 @@
 
 ## Setup
 
+### Node Server
+
+`npm install -g live-server`
+
 ### Install Docker 
 
 `needs instructions`
