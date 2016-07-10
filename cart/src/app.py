@@ -270,7 +270,7 @@ if __name__ == '__main__':
                         config={
              '/': {
                  'tools.staticdir.on' : True,
-                 'tools.staticdir.dir' : os.path.join(current_dir, '../webroot'),
+                 'tools.staticdir.dir' : os.path.join(current_dir, '../assets'),
                  'tools.staticdir.index' : 'index.html',
              }, 
                        
