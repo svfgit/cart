@@ -28,6 +28,7 @@
     "live-server": "^0.9.1"
   },
   "scripts": {
-    "prestart": "npm update"
+    "prestart": "npm update",
+    "start": "live-server"
   }
 }
